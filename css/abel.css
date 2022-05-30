@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Parisienne&family=Quicksand&family=Water+Brush&display=swap');
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+    font-family: 'Nunito', 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+h1,h2,h3,h4,h5 {
+    color: #751A5B;
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h4 {
+    padding-top: px;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer-container {
+    background: linear-gradient(90deg,#360C2C, #B52894);
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.social-media {
+    display: block;
+}
+
+.social-media i {
+    color: #fff;
+    opacity: 80%;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.social-media i:hover {
+    opacity: 100%;
+}
+
+.intro{
+    font-size: 2.2rem;
+    font-weight: 700;
+    max-width: 500px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.container, .footer-container{
+    margin-top: 50px;
+    gap: 2em;
+}
+
+nav {
+    padding-left: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Water Brush', 'Parisienne', cursive;
+    font-size: 2.5em;
+}
+
+.bg-dark {
+    background-color: #360C2A !important;
+}
+
+.list-container {
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: left;
+}
+
+.btn {
+    background: linear-gradient(90deg,#360C2C, #B52894);
+    border-color:#360C2C;
+    margin-left: auto;
+    border-radius: 3em;
+    width: 100%;
+    opacity: 80%;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(270deg,#360C2C, #B52894);
+    opacity: 100%;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #53baff;
+}
+  
+::selection {
+    color: white;
+    background: #53baff;
+}
+
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #751A5B;
+    border-radius: 0;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        text-align: justify;
+    }
+    h1,h2,h4,h5 {
+        text-align: right;
+    }
+}
