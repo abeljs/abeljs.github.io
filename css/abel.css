@@ -56,6 +56,7 @@ h4 {
 }
 
 .intro{
+    color: #0f0f0f;
     font-size: 2.2rem;
     font-weight: 700;
     max-width: 500px;
@@ -89,9 +90,11 @@ nav {
 }
 
 .list-container {
-    border: 1px solid;
-    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.125);
+        border-radius: 3px;
     padding: 10px;
+    padding-right: 25px;
+    padding-top: 25px;
     text-align: left;
 }
 
@@ -113,12 +116,12 @@ nav {
 
 ::-moz-selection { /* Code for Firefox */
     color: white;
-    background: #53baff;
+    background: #8b418b;
 }
   
 ::selection {
     color: white;
-    background: #53baff;
+    background: #8b418b;
 }
 
 html {
@@ -136,6 +139,65 @@ html {
     border-radius: 0;
 }
 
+#themeToggle {
+    color: white;
+    box-shadow: var(--box-shadow);
+    border-color: rgba(255, 255, 255, 0);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#themeToggle:focus {
+    outline: 0;
+}
+
+:root:not(.dark-theme) .bi-sun-fill {
+    display: none;
+}
+
+:root:not(.dark-theme) .bi-moon-fill {
+    display: inline-block;
+}
+
+:root.dark-theme .bi-sun-fill {
+    display: inline-block;
+}
+
+:root.dark-theme .bi-moon-fill {
+    display: none;
+}
+
+.dark-theme body, .dark-theme .card {
+    background: #111111;
+    color: #CFD8DC;
+}
+
+.dark-theme .bg-dark {
+    background-color: #000 !important;
+} 
+
+.dark-theme .intro {
+    color: #0f0f0f;
+}
+
+.dark-theme .card-body, .dark-theme .card-footer, .dark-theme .list-container {
+    border: solid #222222 1px;
+}
+
+.dark-theme .card-footer {
+    background: #161616;
+    border-top: 0px;
+}
+
+.dark-theme ::-webkit-scrollbar {
+    width: 14px;
+    background-color: #202020;
+}
 
 
 @media only screen and (min-width: 600px) {
